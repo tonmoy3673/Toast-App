@@ -9,5 +9,60 @@
 }
 
 body{
-    background:var(--background-color) ;
+    background:var(--background-color);
+    font-family: "Poppins", sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 100vh;
+
+}
+.btn-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+
+}
+.btn{
+    width: 100px;
+    padding: 10px 12px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    color:#f2f2f2;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.success{
+    background: #308113;
+    box-shadow: 0 4px 8px rgba(48, 129, 19, 0.5);
+}
+.error{
+    background: #ab1a1f;
+    box-shadow: 0 4px 8px rgba(171, 26, 31, 0.5);
+}
+.warning{
+    background: #f39c12;
+    box-shadow: 0 4px 8px rgba(243, 156, 18, 0.5);
 }
