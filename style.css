@@ -3,3 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --background-color:#f7edff;
+}
+
+body{
+    background:var(--background-color) ;
+}
