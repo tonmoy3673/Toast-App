@@ -76,6 +76,12 @@ body{
     box-shadow: 0 0 20px rgba(0,0,0,0.3);
     position: relative;
    
+   
+}
+.toast{
+    display: flex;
+    align-items: center;
+    gap: 7px;
 }
 .toast-div::after{
     content: '';
