@@ -54,15 +54,15 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.success{
+.success-btn{
     background: #308113;
     box-shadow: 0 4px 8px rgba(48, 129, 19, 0.5);
 }
-.error{
+.error-btn{
     background: #ab1a1f;
     box-shadow: 0 4px 8px rgba(171, 26, 31, 0.5);
 }
-.warning{
+.warning-btn{
     background: #f39c12;
     box-shadow: 0 4px 8px rgba(243, 156, 18, 0.5);
 }
@@ -70,7 +70,38 @@ body{
     margin: 20px 10px;
     width: 100%;
     max-width: 300px;
-    border: 2px solid #a7a7a7;
+    height: 60px;
     padding: 10px 7px;
     border-radius: 6px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    position: relative;
+   
+}
+.toast-div::after{
+    content: '';
+    width: 100%;
+    bottom:0;
+    height: 4px;
+    background: #308113;
+    margin: 10px auto;
+    position: absolute;
+    left: 0;
+    animation: anim 5s linear forwards;
+}
+@keyframes anim{
+    100%{
+        width: 0;
+    }
+}
+
+
+.toast-div.success::after{
+    background: #308113;
+}
+
+.toast-div.error::after{
+    background: #ab1a1f;
+}
+.toast-div.warning::after{
+    background: #f39c12;
 }

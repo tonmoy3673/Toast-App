@@ -14,8 +14,18 @@ const displayToast=(msg)=>{
     const toastDiv = document.createElement('div');
     toastDiv.classList.add('toast-div');
     const toast = document.createElement('p');
+    if (msg==successMsg) {
+        toastDiv.classList.add('success')
+    }
+    else if (msg==errorMsg){
+    
+    }
     toast.innerHTML= msg;
     toastDiv.appendChild(toast);
-    toastBox.appendChild(toastDiv)
+    toastBox.appendChild(toastDiv);
 
+
+    setTimeout(()=>{
+        toastDiv.remove()
+    },5000)
 }
